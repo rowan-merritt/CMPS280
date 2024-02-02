@@ -1,0 +1,86 @@
+CMPS280 Spring 2023
+Programming Assignment #5
+
+For this assignment we will be making use of abstract classes, interfaces, inheritance, and polymorphism.
+The goal of the assignment is to create several different classes that will be related by inheriting from the
+same superclasses or that implement the same interfaces. You will be creating the background for part
+of a “Tycoon” style game. You’ll define abstract classes to represent different types of rides, food stalls,
+and attractions, and then some concrete subclasses for those abstract classes. You’ll also be defining an
+amusement park class that will make use of your concrete classes to detail the available rides, food, and
+attractions at at least three different parks. You’ll also define an interface for telling whether a given
+class or classification of items is child friendly. The details for required classes and their uses are below.
+
+Requirements:
+    ● Follow our standard naming convention of ClassNameLastNameFirstName.java for all files.
+    ● Define three abstract classes:
+        ○ Ride
+        ○ FoodStall
+        ○ Attraction
+    ● From those abstract classes, create at least three classes from each category. Some examples of
+      each will be given at the end of this document.
+    ● Create a ChildFriendly marker interface to say whether or not a given ride, food venue, or
+      attraction is safe for children. Remember not every type of establishment needs to serve children.
+    ● Create an AmusementPark class that makes use of various rides, food stalls, and attractions to
+    seem like an attractive place to visit.
+        ○ Within the AmusementPark class use polymorphism to create arrays or arraylists of all
+          rides, food stalls, attractions, and what parts are child friendly in that park, if any.
+            ■ Hint: That means you can use 4 arrays/arraylists to hold that information.
+        ○ You will need additional methods for setting up your AmusementPark during the running of your program.
+    ● Create a ParkTycoon class that will contain the only main method of your program.
+        ○ Within the main, create at least three different amusement parks completely filled out
+          with ride, food, and attraction lists. Include how much, if any of the park is child friendly.
+    ● Vary the set up for your different amusement parks when you instantiate them in your main
+      method so that each is distinct.
+    ● Be creative! This will be a lot of set up on your part, but make it interesting for yourself (and me)
+      as you’re going through it!
+
+Helpful Hints:
+    ● Consider all of the aspects would be good to include on every type of item that will fall under a
+      given abstract class, such as every FoodStall in an amusement park.
+    ● Your AmusementPark class should contain information about the park in addition to the ride
+      lists, such as names, the type of amusement park it is, and methods to set different parts of it.
+    ● Remember that through polymorphism supertypes can be used as types for subtypes.
+    ● Creating well thought out and formatted toString methods will be extremely helpful.
+    ● Your main will give out a lot of information durings is running after you set everything up, but
+      you don’t need to have user interaction with this assignment.
+
+Submission:
+    ● Remember to follow the naming convention for all classes you create and submit all of your .java
+      files to Moodle. Ensure that all of your classes compile and that your main runs to completion.
+      You may leave your work as a draft as that will allow you to change the files you uploaded should
+      you notice a problem or upload the wrong file. However, keep in mind, I will only see the time of
+      the final file upload so please check your files as soon as you upload them. By submitting a file to
+      be graded, whether draft or fully submitted, you are agreeing to the academic integrity policy as
+      outlined in the syllabus and student handbook.
+
+Potential Examples:
+    In place of a sample run, I’ve got some potential examples for each type of class in case you get stuck.
+    However, feel free to use some or none of these and completely create your own or give them cool
+    names and descriptions. Mine will be as general as possible to leave you plenty of room for creativity.
+
+    Example subtypes for Ride:
+        ● RollerCoaster
+        ● FerrisWheel
+        ● WaterSlide
+        ● BouncyCastle
+
+    Example subtypes for FoodStall:
+        ● HotDogStand
+        ● FunnelCakes
+        ● FrozenCustard
+        ● Bar
+
+    Example subtypes for Attraction:
+        ● HauntedHouse
+        ● ExtraSpookyHauntedHouse
+        ● Theater
+        ● Museum
+
+    Example AmusementPark: (this would be created in code during the running of your main and you would format it better)
+
+        Angry Beavers Water Park.
+            We have:
+                2 Rides! Enjoy our roller coaster and water slide!
+                3 Food Stalls! Come have a bite at our hot dog stand, cool off at TooCool’s Frozen Custard, or come have
+                a drink at the Drunken Sailor bar.
+                Children are welcome at our roller coaster, water slide, hot dog stand, and TooCool’s Frozen Custard

@@ -1,0 +1,1 @@
+public interface ChildOnlyMerrittAubrey {} // marks what is child friendly

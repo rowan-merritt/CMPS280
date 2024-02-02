@@ -1,0 +1,41 @@
+CMPS280 Spring 2023
+Programming Assignment #4 - Containers
+
+For this assignment we will be making use of inheritance to keep from having to redefine many of the
+common attributes associated with different types of containers. You will be defining a general
+Container class that will have the common attributes of all types of containers and then you need to
+define three different subtypes of containers (there are many types of containers, however, some
+examples may be boxes, bottles, drawers, etc). Be creative when coming up with what types of
+containers you want to define more specifically. At a minimum, you should define the material the 
+container is made of, the color of it, whether it is filled or not, what it is filled with, a percentage of how
+full it is, and a toString method to create a String version of your object, and its attributes, for printing.
+Creating additional attributes beyond what is required is encouraged. For a 10-point bonus, define a
+subclass of one of your subclasses to be an even more specialized version of it with additional attributes.
+
+Requirements:
+    ● Name your top class ContainerLastNameFirstName, create a ContainerTesterLastNameFirstName, and then use the same format for each subclass.
+    ● Define the general Container class that your other classes will inherit from.
+    ● Define three different, more specific, containers that will define their own, more specialized,
+      attributes.
+    ● Create a toString method to make printing your objects more consistent across all your classes.
+        ○ Be sure to make use of method overriding in your subclasses.
+    ● Define additional methods that could be used to get or set the attributes for your classes as they
+      make sense (e.g. changing the material of a container after it's created doesn’t make sense, but
+      changing its color may).
+    ● For the bonus, make sure that there is a recognizable additional specialization created.
+    ● You’ll use your tester class to create and use the Container subclasses you create.
+        ○ Your tester class doesn’t need to be user driven, you can create and display containers
+          with no interaction. I’ll be looking at the code you’ve written.
+
+Helpful Hints:
+    ● Be creative. Look around and take some time in deciding on what you want to create.
+    ● If you get stuck, feel free to ask me or another student for some help but not their work.
+
+Submission:
+    ● Name your classes as detailed above and upload only the associated .java files to Moodle. You
+      may leave your work as a draft as that will allow you to change the files you uploaded should you
+      notice a problem or upload the wrong file. However, keep in mind, I will only see the time of the
+      final file upload so please check your files as soon as you upload them. By submitting a file to be
+      graded, whether draft or fully submitted, you are agreeing to the academic integrity policy as
+      outlined in the syllabus and student handbook. You will have at least 5 files for this assignment
+      or 6 if you do the bonus, make sure to include all of them.
